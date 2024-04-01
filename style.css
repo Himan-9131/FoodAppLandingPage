@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+   --yellow-gradient: #FFC554;
+   --custom-yellow: #FFC727;
+   --custom-black: #1F1F1F;
+   --ctabutton-background: #f9db81da;
+   --custom-white: #FFFFFF;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Ubuntu", sans-serif;
+   text-decoration: none;
+   scroll-behavior: smooth;
+}
+
+html {
+   scroll-padding-top: 100px;
+}
+
+h1 {
+   font-size: 3rem;
+}
+
+h2 {
+   font-size: 2rem;
+}
+
+p {
+   font-size: .9rem;
+}
+
+img {
+   width: 40rem;
+   height: 40rem;
+}
+
+.colored-text {
+   color: var(--custom-yellow);
+}
+
+.button {
+   margin-top: 1rem;
+}
+
+header {
+   position: sticky;
+   top: 0;
+   background: #fff;
+   padding: 1rem 10%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.roo {
+   color: var(--yellow-gradient);
+}
+
+nav {
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+}
+
+header nav a {
+   color: var(--custom-black);
+}
+
+header nav a:hover {
+   color: var(--custom-yellow);
+   border-bottom: 2px solid var(--custom-yellow);
+}
+
+.order-button {
+   border-radius: 4px;
+   padding: 0.5rem;
+   background: #fcefd7;
+   color: var(--custom-yellow);
+   cursor: pointer;
+}
+
+.order-button:hover {
+   background: var(--custom-yellow);
+   color: var(--custom-white);
+}
+
+#bar-icon {
+   display: none;
+}
+
+#cross-icon {
+   display: none;
+}
+
+.container {
+   padding: 1rem 10%;
+   display: flex;
+   align-items: center;
+   gap: 5rem;
+}
+
+.hero-content {
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+   align-items: flex-start;
+}
+
+.hero-cta {
+   border-radius: 4px;
+   padding: 0.5rem;
+   background: var(--custom-yellow);
+   color: var(--custom-white);
+   cursor: pointer;
+}
+
+.services.container {
+   flex-direction: column;
+   background: #fffaf1;
+}
+
+.services-heading {
+   text-align: center;
+}
+
+.services-heading p {
+   margin: 1rem 10rem;
+}
+
+.card-container {
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+}
+
+.card {
+   padding: 1rem 2rem;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 2rem;
+   border-radius: .4rem;
+}
+
+.card img {
+   width: 4rem;
+   height: 4rem;
+}
+
+.card a {
+   color: black;
+}
+
+.card a i {
+   margin-left: .5rem;
+}
+
+.card:nth-child(2) {
+   background: var(--custom-white);
+}
+
+.about-content {
+   display: flex;
+   flex-direction: column;
+   gap: 1.6rem;
+   align-items: flex-start;
+}
+
+.about-four.container {
+   margin: 0 10%;
+   background: #FFC727;
+   border-radius: .6rem;
+}
+
+.about-four-btn-container {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+}
+
+.about-four-btn-container .bb-btn {
+   background: black;
+   display: flex;
+   gap: .5rem;
+   padding: .5rem .8rem;
+   border-radius: .2rem;
+   cursor: pointer;
+   align-items: center;
+}
+
+.about-four-btn-container .bb-btn img {
+   width: 2rem;
+   height: 2rem;
+}
+
+.about-four-btn-container .bb-btn .btn-text h6,
+h4 {
+   color: #fff;
+}
+
+.contact {
+   margin-top: 5rem;
+   background: #fffaf1;
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+   padding: 4rem 10%;
+}
+
+.contact div span {
+   font-weight: bold;
+}
+
+.contact div p {
+   color: grey;
+   margin-top: .5rem;
+}
+
+.contact div p i {
+   color: var(--custom-yellow);
+}
+
+.contact div:nth-child(1) p {
+   width: 16rem;
+}
+
+.desc {
+   background: var(--custom-yellow);
+   text-align: center;
+   padding: 2rem;
+}
+
+
+/* Tablet View */
+
+@media screen and (max-width: 768px) {
+
+   /* Header */
+   header {
+      padding: 0.5rem 10%;
+   }
+
+   #menu {
+      display: none;
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 999;
+   }
+
+   #menu.active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+   }
+
+   #menu .order-button {
+      display: none;
+   }
+
+   header h2 {
+      font-size: 30px;
+   }
+
+   #bar-icon {
+      display: block;
+   }
+
+   #bar-icon.active {
+      display: none;
+   }
+
+   #cross-icon.active {
+      display: block;
+   }
+
+   /* Common code */
+   h1 {
+      font-size: 1.7rem;
+   }
+
+   h2 {
+      font-size: 1rem;
+   }
+
+   p {
+      font-size: .6rem;
+   }
+
+   img {
+      width: 16rem;
+      height: 16rem;
+   }
+
+   .order-button {
+      border-radius: 2px;
+      padding: 0.5rem;
+      font-size: .8rem;
+   }
+
+   /* Home */
+   .hero-content {
+      gap: 1rem;
+      align-items: flex-start;
+   }
+
+   .hero-cta {
+      font-size: .8rem;
+      padding: .4rem;
+   }
+
+   /* About */
+   .about-four-btn-container .bb-btn {
+      gap: .5rem;
+      padding: .4rem .6rem;
+   }
+
+   .bb-btn .btn-text h6 {
+      font-size: .4rem;
+   }
+
+   .bb-btn .btn-text h4 {
+      font-size: .6rem;
+   }
+
+   /* Contact */
+   .contact {
+      margin-top: 3rem;
+      padding: 2rem;
+   }
+
+   .contact div span {
+      font-size: .6rem;
+   }
+
+}
+
+
+/* Mobile view */
+
+@media screen and (max-width: 480px) {
+
+   /* Header */
+   header {
+      padding: 0.5rem 10%;
+   }
+
+   header h2 {
+      font-size: 1.5rem;
+   }
+
+   header nav {
+      display: none;
+   }
+
+   #bar-icon {
+      display: block;
+   }
+
+   #bar-icon.active {
+      display: none;
+   }
+
+   #cross-icon.active {
+      display: block;
+   }
+
+   /* Common Code */
+   h1 {
+      font-size: 1rem;
+   }
+
+   h2 {
+      font-size: .7rem;
+   }
+
+   p {
+      font-size: .5rem;
+      margin: 0 1rem;
+   }
+
+   img {
+      width: 10rem;
+      height: 10rem;
+   }
+
+   .container {
+      padding: 1rem 5%;
+      gap: 2rem;
+      justify-content: center;
+      flex-direction: column;
+   }
+
+   .order-button {
+      border-radius: 2px;
+      padding: 0.3rem;
+      font-size: .7rem;
+   }
+
+   /* Home */
+   .home.container {
+      flex-direction: column-reverse;
+   }
+
+   .hero-content {
+      gap: .5rem;
+      align-items: center;
+      text-align: center;
+   }
+
+   .hero-cta {
+      font-size: .6rem;
+      padding: .3rem;
+   }
+
+   /* Services */
+   .services.container {
+      gap: 1rem;
+   }
+
+   .services-heading p {
+      margin: 1rem;
+   }
+
+   .card-container {
+      flex-direction: column;
+      gap: 1rem;
+   }
+
+   .card {
+      padding: 1rem 5rem;
+      align-items: center;
+      gap: .6rem;
+      background: var(--custom-white);
+      text-align: center;
+   }
+
+   .card img {
+      width: 2rem;
+      height: 2rem;
+   }
+
+   .card a {
+      font-size: .5rem;
+      background: rgb(245, 243, 243);
+      padding: .3rem;
+      border-radius: 2px;
+   }
+
+   .card a i {
+      margin-left: .2rem;
+   }
+
+   /* About */
+
+   .about-content {
+      gap: 1rem;
+      align-items: center;
+      text-align: center;
+   }
+
+   .about-two.container {
+      flex-direction: column-reverse;
+   }
+
+   .about-four-btn-container .bb-btn {
+      background: black;
+      display: flex;
+      gap: .3rem;
+      padding: .2rem .5rem;
+      border-radius: .1rem;
+   }
+
+   .about-four-btn-container .bb-btn img {
+      width: 1.4rem;
+      height: 1.4rem;
+   }
+
+   .bb-btn h6 {
+      font-size: .4rem;
+   }
+
+   .bb-btn h4 {
+      font-size: .8rem;
+   }
+
+   /* Contact */
+   .contact {
+      margin-top: 3rem;
+      padding: 1rem .5rem;
+   }
+
+   .contact div span {
+      font-size: .6rem;
+   }
+
+   .contact div p {
+      color: grey;
+      margin: .3rem 0 0;
+
+   }
+
+   .contact div p i {
+      color: var(--custom-yellow);
+   }
+
+   .contact div:nth-child(1) p {
+      width: 5rem;
+   }
+
+   .desc {
+      background: var(--custom-yellow);
+      text-align: center;
+      padding: 1rem;
+      font-size: .6rem;
+   }
+}
