@@ -11,6 +11,14 @@ Note: **It's totally custom design and not influenced from anywhere**
 
 Click the [Hosted link](https://food-application-landing-page.netlify.app) or see the preview below.
 
-Preview: 
+**Desktop View:** 
 
 ![Deliveroo - A food ordering landing page](https://github.com/Himan-9131/FoodAppLandingPage/assets/120475007/08f1484f-99c1-4dcb-afd8-ae58dd0327fb)
+
+**Tablet View:** 
+
+![FireShot Capture 020 - Deliveroo - A food ordering landing page_ - food-application-landing-page - Tablet - View](https://github.com/Himan-9131/FoodAppLandingPage/assets/120475007/2f8f3044-a566-4a19-b1f9-124d32570bd1)
+
+**Mobile View:**
+
+![FireShot Capture 019 - Deliveroo - A food ordering landing page_ - food-application-landing-page - Mobile - View](https://github.com/Himan-9131/FoodAppLandingPage/assets/120475007/db06cfbb-1f96-44c2-9d51-e418144fba3a)
